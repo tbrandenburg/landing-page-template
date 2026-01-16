@@ -1,0 +1,50 @@
+{
+  "name": "hackathon-ai-workflow-landing-page",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered development workflow landing page showcasing cutting-edge development processes",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix"
+  },
+  "dependencies": {
+    "framer-motion": "^12.26.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.1"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "tailwind",
+    "motion",
+    "ai-development",
+    "workflow",
+    "hackathon",
+    "landing-page"
+  ],
+  "author": "AI Workflow Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackathon/ai-workflow-landing-page.git"
+  }
+}

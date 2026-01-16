@@ -1,0 +1,514 @@
+# Feature: AI-Powered Development Workflow Landing Page (HACKATHON WINNER)
+
+## Summary
+
+Building a stunning React landing page that showcases AI-powered development workflows for hackathon victory. The page demonstrates how AI-human collaboration creates genuinely impressive experiences beyond generic AI aesthetics. **META-TWIST**: This landing page itself is built using the exact AI workflow it teaches - a living demonstration of the methodology.
+
+## User Story
+
+As a hackathon judge
+I want to see innovative AI development workflows in action
+So that I can evaluate technical excellence, educational value, and real-world applicability
+
+## Problem Statement
+
+Generic AI-generated websites lack personality and craftsmanship. Developers need proven workflows that combine AI efficiency with human creativity to produce genuinely impressive results that win competitions and real projects.
+
+## Solution Statement
+
+Create a performance-optimized React landing page using cutting-edge tech stack (Vite 7 + Motion + Tailwind V3) that teaches and demonstrates advanced AI development workflows through interactive sections, real examples, and stunning visual design.
+
+## Metadata
+
+| Field            | Value                                             |
+| ---------------- | ------------------------------------------------- |
+| Type             | NEW_CAPABILITY                                   |
+| Complexity       | MEDIUM                                           |
+| Systems Affected | Frontend, Deployment, Content Management          |
+| Dependencies     | Vite 7.0.0, React 18+, Motion, Tailwind CSS V3  |
+| Estimated Tasks  | 12                                               |
+
+---
+
+## UX Design
+
+### Before State
+```
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                              BEFORE STATE                                      ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║   ┌─────────────┐         ┌─────────────┐         ┌─────────────┐            ║
+║   │   Empty     │ ──────► │   Nothing   │ ──────► │   No Demo   │            ║
+║   │ Repository  │         │   Built     │         │ to Show     │            ║
+║   └─────────────┘         └─────────────┘         └─────────────┘            ║
+║                                                                               ║
+║   USER_FLOW: Judges see empty repo, no working demo, no innovation           ║
+║   PAIN_POINT: No tangible proof of AI workflow effectiveness                  ║
+║   DATA_FLOW: Static documentation only, no interactive demonstration         ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+```
+
+### After State
+```
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                               AFTER STATE                                      ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║   ┌─────────────┐         ┌─────────────┐         ┌─────────────┐            ║
+║   │ Stunning    │ ──────► │ Interactive │ ──────► │ Hackathon   │            ║
+║   │ Landing     │         │ AI Workflow │         │ Victory     │            ║
+║   │ Page        │         │ Demo        │         │             │            ║
+║   └─────────────┘         └─────────────┘         └─────────────┘            ║
+║                                   │                                           ║
+║                                   ▼                                           ║
+║                          ┌─────────────┐                                      ║
+║                          │ EDUCATIONAL │  ◄── Live AI process examples        ║
+║                          │ VALUE       │      Real prompts & outputs          ║
+║                          └─────────────┘      Meta-demonstration              ║
+║                                                                               ║
+║   USER_FLOW: Hero → Design System → AI Research → PoC Creation → Victory     ║
+║   VALUE_ADD: Judges learn cutting-edge AI workflows while being impressed     ║
+║   DATA_FLOW: Interactive sections → Real examples → Actionable insights       ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+```
+
+### Interaction Changes
+| Location | Before | After | User Impact |
+|----------|--------|-------|-------------|
+| `/` | Empty repository | Deployed landing page | Can access live demo |
+| `Hero Section` | No content | Compelling value proposition | Immediately understand innovation |
+| `Design System` | Missing | Interactive foundation showcase | Learn systematic approach |
+| `AI Research` | No examples | Real Gemini/Claude workflows | See actual AI process |
+| `PoC Creation` | No demo | Step-by-step transformation | Understand implementation |
+| `Mobile View` | N/A | Perfect responsive design | Works flawlessly on all devices |
+
+---
+
+## State-of-the-Art Technology Research
+
+**Context7 Research Findings - Best Libraries for Hackathon Victory:**
+
+### Core Stack
+| Technology | Library ID | Version | Benchmark Score | Why Chosen |
+|------------|------------|---------|-----------------|------------|
+| **Build Tool** | `/vitejs/vite` | 7.0.0 | 76.9 | Latest performance optimizations, instant HMR |
+| **Animation** | `/websites/motion_dev_react` | Latest | 74.0 | Production-grade, native performance |
+| **Styling** | `/websites/v3_tailwindcss` | V3 | 85.9 | Utility-first rapid development |
+
+### Key Technical Advantages
+- **Vite 7.0.0**: `baseline-widely-available` target, optimized builds
+- **Motion for React**: Native browser performance + JavaScript flexibility
+- **Tailwind CSS V3**: Utility-first with excellent performance (highest benchmark score)
+
+---
+
+## Mandatory Reading
+
+**CRITICAL: Implementation agent MUST read these Context7 docs before starting:**
+
+| Priority | Library | Section | Why Read This |
+|----------|---------|---------|---------------|
+| P0 | `/vitejs/vite` | Configuration & Build | Pattern to MIRROR for optimal setup |
+| P1 | `/websites/motion_dev_react` | Viewport animations | Scroll-triggered effects pattern |
+| P2 | `/websites/v3_tailwindcss` | Design systems | Professional styling approach |
+
+**External Documentation:**
+| Source | Section | Why Needed |
+|--------|---------|------------|
+| [PRD Document](PRPs/landing-page-prd.md) | Complete requirements | Full context and specifications |
+| [Vite 7 Docs](https://vitejs.dev/guide/) | Latest features | Cutting-edge build optimization |
+| [Motion React](https://motion.dev/docs/react) | Performance patterns | Smooth viewport animations |
+
+---
+
+## Patterns to Mirror
+
+**VITE_7_CONFIGURATION:**
+```javascript
+// SOURCE: Context7 /vitejs/vite research
+// COPY THIS PATTERN:
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    }
+  },
+  server: {
+    port: 3000,
+    host: '0.0.0.0',
+    hmr: { overlay: true }
+  },
+  build: {
+    target: 'baseline-widely-available', // Vite 7 default
+    chunkSizeWarningLimit: 1000,
+    reportCompressedSize: false, // Faster builds
+    minify: 'terser',
+    terserOptions: {
+      compress: { drop_console: true }
+    }
+  }
+})
+```
+
+**MOTION_VIEWPORT_ANIMATIONS:**
+```jsx
+// SOURCE: Context7 /websites/motion_dev_react research  
+// COPY THIS PATTERN:
+import { motion } from 'motion/react'
+
+const Section = ({ children }) => (
+  <motion.section
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+  >
+    {children}
+  </motion.section>
+)
+
+// List animations with stagger
+const list = {
+  visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+  hidden: { opacity: 0 }
+}
+
+const item = {
+  visible: { opacity: 1, x: 0 },
+  hidden: { opacity: 0, x: -50 }
+}
+```
+
+**TAILWIND_DESIGN_SYSTEM:**
+```css
+/* SOURCE: Context7 /websites/v3_tailwindcss research */
+/* COPY THIS PATTERN: */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 220 100% 50%;
+    --color-secondary: 280 100% 60%;
+    --color-accent: 45 100% 55%;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600;
+  }
+}
+```
+
+**COMPONENT_ARCHITECTURE:**
+```jsx
+// SOURCE: PRD requirements + React best practices
+// COPY THIS PATTERN:
+const HeroSection = () => (
+  <motion.section 
+    className="min-h-screen flex items-center justify-center hero-gradient"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+    <div className="section-container text-center text-white">
+      <motion.h1 
+        className="text-6xl font-bold mb-6"
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      >
+        AI-Powered Development That Actually Works
+      </motion.h1>
+    </div>
+  </motion.section>
+)
+```
+
+---
+
+## Files to Change
+
+| File | Action | Justification |
+|------|--------|---------------|
+| `package.json` | CREATE | Project dependencies and scripts |
+| `vite.config.js` | CREATE | Vite 7 configuration with performance optimizations |
+| `tailwind.config.js` | CREATE | Design system configuration |
+| `index.html` | CREATE | HTML entry point with SEO meta tags |
+| `src/App.jsx` | CREATE | Main application component |
+| `src/main.jsx` | CREATE | React application entry point |
+| `src/components/sections/HeroSection.jsx` | CREATE | Hero section with value proposition |
+| `src/components/sections/DesignSystemSection.jsx` | CREATE | Design system foundation showcase |
+| `src/components/sections/AIResearchSection.jsx` | CREATE | AI research process demonstration |
+| `src/components/sections/PoCCreationSection.jsx` | CREATE | PoC creation workflow |
+| `src/components/ui/WorkflowVisualization.jsx` | CREATE | Interactive workflow diagram |
+| `src/styles/index.css` | CREATE | Global styles and Tailwind imports |
+
+---
+
+## NOT Building (Phase 1 Scope Limits)
+
+Explicit exclusions to maintain hackathon focus:
+
+- **Backend API**: Static site only, no server-side functionality
+- **User Authentication**: No login/signup features
+- **Content Management**: Static content, no CMS integration  
+- **Advanced Testing**: Basic Playwright only, no extensive test suite
+- **Multiple Languages**: English only for hackathon
+- **Email Capture**: No newsletter or contact forms
+
+---
+
+## Step-by-Step Tasks
+
+Execute in order. Each task is atomic and optimized for hackathon speed.
+
+### Task 1: INITIALIZE Vite 7 + React Project
+
+- **ACTION**: Create new Vite project with React
+- **IMPLEMENT**: Latest Vite 7 with performance-optimized configuration
+- **COMMANDS**: 
+  ```bash
+  npm create vite@latest . -- --template react
+  npm install
+  ```
+- **VALIDATE**: `npm run dev` starts development server
+- **TIME**: 30 minutes
+- **GOTCHA**: Use `npm create vite@latest` not older templates
+
+### Task 2: INSTALL State-of-the-Art Dependencies
+
+- **ACTION**: Add Motion, Tailwind CSS, and optimization libraries
+- **IMPLEMENT**: 
+  ```bash
+  npm install motion tailwindcss@latest
+  npm install -D @tailwindcss/typography autoprefixer postcss
+  ```
+- **VALIDATE**: `npm list` shows all dependencies correctly installed
+- **TIME**: 15 minutes
+- **GOTCHA**: Use `motion` package, not `framer-motion` for better performance
+
+### Task 3: CONFIGURE Vite 7 Build System
+
+- **ACTION**: Create optimized Vite configuration
+- **IMPLEMENT**: Vite config with aliases, performance settings, Terser optimization
+- **MIRROR**: Context7 Vite pattern with `baseline-widely-available` target
+- **VALIDATE**: `npm run build` creates optimized production bundle
+- **TIME**: 30 minutes
+- **GOTCHA**: Set `reportCompressedSize: false` for faster builds
+
+### Task 4: SETUP Tailwind CSS Design System
+
+- **ACTION**: Initialize Tailwind with custom design tokens
+- **IMPLEMENT**: Tailwind config, PostCSS setup, custom CSS properties
+- **COMMANDS**: `npx tailwindcss init -p`
+- **VALIDATE**: Tailwind classes work in components
+- **TIME**: 45 minutes
+- **GOTCHA**: Configure content paths correctly for Vite structure
+
+### Task 5: CREATE Project Structure & Entry Points
+
+- **ACTION**: Set up component architecture and main files
+- **IMPLEMENT**: App.jsx, main.jsx, index.html with proper structure
+- **PATTERN**: Component-based architecture with sections/ and ui/ folders
+- **VALIDATE**: `npm run dev` shows basic React app
+- **TIME**: 30 minutes
+
+### Task 6: USE Landing-Page-Creator Skill for Unique Design
+
+- **ACTION**: Generate distinctive visual identity and design system
+- **IMPLEMENT**: Custom color palette, typography, unique visual elements
+- **TOOLS**: Landing-page-creator skill for AI-generated design concepts
+- **VALIDATE**: Design stands out from generic AI aesthetics
+- **TIME**: 2 hours
+- **GOTCHA**: Iterate on design until it's genuinely impressive
+
+### Task 7: BUILD Hero Section with Motion Animations
+
+- **ACTION**: Create compelling hero section with viewport animations
+- **IMPLEMENT**: Motion-powered entrance effects, scroll-triggered animations
+- **MIRROR**: Context7 Motion patterns for `whileInView` effects
+- **VALIDATE**: Smooth animations on scroll, mobile-responsive
+- **TIME**: 1.5 hours
+
+### Task 8: IMPLEMENT Design System Foundation Section
+
+- **ACTION**: Interactive showcase of design system principles
+- **IMPLEMENT**: Live color palette, typography scale, spacing examples
+- **CONTENT**: How design systems are established before development
+- **VALIDATE**: Educational content with interactive elements
+- **TIME**: 2 hours
+
+### Task 9: CREATE AI Research Process Section
+
+- **ACTION**: Demonstrate AI workflow with real examples
+- **IMPLEMENT**: Side-by-side comparison of AI outputs, prompt examples
+- **CONTENT**: Real Gemini/Claude prompts and results from actual workflow
+- **VALIDATE**: Shows genuine AI development process
+- **TIME**: 2.5 hours
+- **GOTCHA**: Use REAL examples, not fabricated content
+
+### Task 10: BUILD PoC Creation Workflow Section
+
+- **ACTION**: Show transformation from design to working prototype  
+- **IMPLEMENT**: Step-by-step code progression, visual before/after
+- **CONTENT**: Component building, iterative refinement process
+- **VALIDATE**: Clear demonstration of design-to-code workflow
+- **TIME**: 2 hours
+
+### Task 11: ADD Interactive Workflow Visualization
+
+- **ACTION**: Create beautiful animated diagram of entire process
+- **IMPLEMENT**: SVG-based workflow with Motion animations
+- **DESIGN**: "Beautiful flashy workflow visualization" per PRD
+- **VALIDATE**: Smooth animations, mobile-optimized layout
+- **TIME**: 3 hours
+- **GOTCHA**: This is the "wow factor" element - invest time for quality
+
+### Task 12: OPTIMIZE Performance & Deploy to Vercel
+
+- **ACTION**: Performance optimization and production deployment
+- **IMPLEMENT**: Image optimization, lazy loading, Vercel deployment
+- **COMMANDS**: 
+  ```bash
+  npm run build
+  npx vercel --prod
+  ```
+- **VALIDATE**: Lighthouse score 90+, mobile perfect score
+- **TIME**: 1 hour
+- **GOTCHA**: Test on multiple devices before submission
+
+---
+
+## Testing Strategy
+
+### Performance Testing (Priority 1)
+- **Lighthouse Performance**: Target 90+ score
+- **Mobile Speed**: First Contentful Paint < 1.5s  
+- **Animation Performance**: 60fps on mobile devices
+- **Bundle Size**: < 500KB initial load
+
+### Functionality Testing
+- **Responsive Design**: All breakpoints work flawlessly
+- **Animation Smoothness**: No janky transitions
+- **Content Accuracy**: All AI examples are real and actionable
+- **Cross-Browser**: Chrome, Firefox, Safari compatibility
+
+### Hackathon Validation
+- **Demo Ready**: Works perfectly for live presentation
+- **Educational Value**: Judges learn something valuable
+- **Technical Innovation**: Cutting-edge tech choices impress
+- **Visual Impact**: Stands out from competition
+
+---
+
+## Validation Commands
+
+### Level 1: DEVELOPMENT
+```bash
+npm run dev
+```
+**EXPECT**: Development server runs, hot reload works, no console errors
+
+### Level 2: BUILD_OPTIMIZATION
+```bash
+npm run build && npm run preview
+```
+**EXPECT**: Production build succeeds, preview works, bundle optimized
+
+### Level 3: PERFORMANCE_AUDIT
+```bash
+npm run build && npx lighthouse http://localhost:4173 --view
+```
+**EXPECT**: Performance score 90+, mobile-friendly, fast loading
+
+### Level 4: DEPLOYMENT_VALIDATION
+```bash
+npx vercel --prod
+```
+**EXPECT**: Successful deployment, custom domain works, global CDN active
+
+---
+
+## Acceptance Criteria
+
+- [ ] **Visual Excellence**: Design impresses hackathon judges, not generic AI look
+- [ ] **Educational Value**: Teaches actionable AI development workflows  
+- [ ] **Technical Innovation**: Uses cutting-edge tech stack (Vite 7, Motion, Tailwind V3)
+- [ ] **Performance**: Lighthouse score 90+, sub-1s loading, 60fps animations
+- [ ] **Mobile Perfect**: Flawless experience on all devices and screen sizes
+- [ ] **Real Content**: Genuine AI examples and prompts, not fabricated demos
+- [ ] **Meta Demonstration**: Page built using the workflow it teaches
+- [ ] **Demo Ready**: Works perfectly for live hackathon presentation
+
+---
+
+## Hackathon Victory Strategy
+
+### Phase 1: PoC (24-48 hours) - CURRENT FOCUS
+**Goal**: Demo-ready landing page that wins hackathon
+
+**Deliverables**:
+- ✅ Working deployed landing page with custom domain
+- ✅ 3 core educational sections with real AI examples
+- ✅ Stunning visual design using landing-page-creator skill
+- ✅ Smooth Motion animations and micro-interactions
+- ✅ Performance optimized (Lighthouse 90+)
+- ✅ Mobile-perfect responsive design
+
+**Demo Story for Judges**:
+*"This landing page demonstrates AI-powered development workflows by being built with the exact process it teaches. You're seeing a meta-demonstration of human-AI collaboration that produces genuinely impressive results beyond typical AI-generated content."*
+
+### Success Metrics
+- **Technical**: Sub-1s loading, 90+ Lighthouse score, 0 console errors
+- **Visual**: Judges comment on impressive design quality
+- **Educational**: Viewers can immediately apply the workflows shown
+- **Innovation**: Cutting-edge tech choices impress technical evaluators
+
+---
+
+## Risks and Mitigations
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| **Design looks AI-generated** | MEDIUM | HIGH | Invest heavily in landing-page-creator skill iteration |
+| **Performance issues on mobile** | LOW | HIGH | Test early and often, optimize images, use Motion performance patterns |
+| **Time pressure affects quality** | HIGH | MEDIUM | Focus on Phase 1 essentials, cut non-critical features |
+| **Deployment problems last-minute** | MEDIUM | HIGH | Set up Vercel early, test deployment process |
+| **AI examples seem fabricated** | MEDIUM | HIGH | Document real workflow with actual prompts/outputs |
+
+---
+
+## Completion Checklist
+
+- [ ] **Foundation**: Vite 7 + React + Motion + Tailwind setup complete
+- [ ] **Design**: Unique visual identity generated with landing-page-creator skill
+- [ ] **Content**: 3 core sections implemented with real AI examples
+- [ ] **Animations**: Motion viewport effects working smoothly
+- [ ] **Performance**: All validation commands pass with target scores
+- [ ] **Mobile**: Perfect responsive design tested on multiple devices
+- [ ] **Deployment**: Live at custom domain, globally accessible
+- [ ] **Demo**: Presentation-ready for hackathon judges
+
+---
+
+## Notes
+
+**META-INSIGHT**: This landing page is itself a demonstration of the AI workflow it teaches - recursive proof of concept that impresses judges while educating viewers.
+
+**HACKATHON EDGE**: Using Vite 7, Motion, and Tailwind V3 shows technical sophistication. Real AI examples provide genuine educational value. Performance optimization ensures flawless demo experience.
+
+**WINNING FORMULA**: Technical innovation + Educational value + Visual excellence + Flawless execution = Hackathon victory
